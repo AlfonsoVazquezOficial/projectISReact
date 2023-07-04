@@ -1,0 +1,226 @@
+
+body {
+    margin: 0;
+    background-color: rgb(17, 17, 37);
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.navBar {
+    width: 100%;
+    background-color: rgb(9, 9, 20);
+    padding: 0;
+    color: white;
+    height: auto;
+    font-size: 1em;
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 1px 2px rgba(147, 146, 146, 0.95);
+
+}
+
+.navElement {
+    padding: 10px 10px;
+    cursor: pointer;
+    width: auto;
+    
+}
+
+.navElement:hover {
+    background-color: rgb(26, 43, 59);
+    color: white;
+    transition-delay: 100ms;
+}
+
+.mainContainer {
+    width: 80vw;
+    background-color: black;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    color:rgb(202, 202, 202);
+    max-height: calc(100vh - 30vh);
+    overflow-y: auto;
+}
+
+.mainContainer::-webkit-scrollbar {
+    width: 0;
+}
+
+.mainC {
+    display: flex;
+    align-items: center;
+    height: 110vh;
+    justify-content: center;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.largeFont {
+    font-size: 1.2em;
+}
+
+.normalFont {
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: white;
+    color:black;
+}
+
+.orange {
+    background-color: rgb(255, 128, 24);
+    color: white;
+}
+
+.green {
+    background-color: rgb(40, 98, 40);
+    color: white;
+}
+
+.red {
+    background-color: rgb(250, 28, 28);
+    color: white;
+}
+
+.large {
+    width: 100%;
+}
+
+.justify-text {
+    justify-content: center;
+    text-align: justify;
+}
+
+.active {
+    background-color: rgb(26, 43, 59);
+    color: white;
+}
+
+.navBarA {
+    text-decoration: none;
+    color: white;
+}
+
+.projectBox {
+    background-color: rgb(32, 32, 32);
+    padding: 30px;
+    padding-top: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.projectBoxHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.devContainer {
+    padding: 30px;
+    padding-top: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.imgDev {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.devsInfo {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
